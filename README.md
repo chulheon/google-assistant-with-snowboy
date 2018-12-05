@@ -9,7 +9,6 @@
   --device-model-id my-device-model-id \
 ```
 
-
 # Snowboy Hotword Detection
 [https://github.com/Kitt-AI/snowboy](https://github.com/Kitt-AI/snowboy)
 [https://snowboy.kitt.ai/dashboard](https://snowboy.kitt.ai/dashboard)
@@ -21,23 +20,32 @@
   ../../resources/models/snowboy.umdl 
 ```
 
-
-# Demo
+## macOS
 
 ```
-
-# macOS
-
 (assistant) (master)⚡ % cd macOS
 (assistant) (master)⚡ % python demo.py \
   --project-id my-project-id \
   --device-model-id my-device-model-id \
   --hotword-model resources/<snowboy.umdl | my_hotword.pmdl>
+```
 
-# linux / Raspberry Pi
+## Linux
 
-(assistant) pi@raspberrypi:~ $ cd linux
-(assistant) pi@raspberrypi:~/linux $ python demo.py \
+```
+(assistant) (master)⚡ cd linux
+(assistant) (master)⚡ python demo.py \
+  --project-id my-project-id \
+  --device-model-id my-device-model-id \
+  --hotword-model resources/<snowboy.umdl | my_hotword.pmdl>
+
+```
+
+## Raspberry Pi
+
+```
+(assistant) pi@raspberrypi:~ $ cd raspberrypi
+(assistant) pi@raspberrypi:~/raspberrypi $ python demo.py \
   --project-id my-project-id \
   --device-model-id my-device-model-id \
   --hotword-model resources/<snowboy.umdl | my_hotword.pmdl>
